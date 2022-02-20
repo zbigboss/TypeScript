@@ -11,15 +11,15 @@
   </div>
 </template>
 
-<script setup name="HelloWorld">
+<script lang="ts" setup name="HelloWorld">
 // import test from "../test/test";
-// import { greeter } from "../test/hello"
-import  mySquare  from "../docs/Note/0217";
+import greeter from "../test/hello";
 import { ref } from "vue";
 const page = () => {
   console.log("hi,xxp");
   let currentTime = new Date();
-  return console.log(greeter);
+  let user = { firstName: "wjz", lastName: "xxp" };
+  console.log(greeter(user));
 };
 const count = ref(0);
 const defineProps = {
