@@ -14,6 +14,7 @@
 <script lang="ts" setup name="HelloWorld">
 // import test from "../test/test";
 import greeter from "../test/hello";
+import  mySquare  from "../docs/Note/0217";
 import { ref } from "vue";
 const page = () => {
   console.log("hi,xxp");
